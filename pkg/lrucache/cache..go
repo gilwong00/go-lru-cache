@@ -4,6 +4,7 @@ import "github.com/gilwong00/go-lru-cache/pkg/queue"
 
 type LruCache interface {
 	Add(n *queue.Node)
+	Delete(n *queue.Node)
 	Print()
 }
 

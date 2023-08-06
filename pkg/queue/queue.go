@@ -7,7 +7,7 @@ type Node struct {
 	Right *Node
 }
 
-type Hash map[string]*Node
+type Dictionary map[string]*Node
 
 type Queue struct {
 	Head   *Node
