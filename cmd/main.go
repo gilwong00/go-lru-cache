@@ -10,16 +10,10 @@ import (
 func main() {
 	fmt.Println("CACHE INITIALIZE")
 	lruCache := lrucache.NewLruCache(10)
-
 	// Add
-	err := lruCache.Add(&queue.Node{Val: "test"})
-	if err != nil {
-		fmt.Printf("error adding to cache: %v", err)
-		panic(err)
-	}
-
+	lruCache.Add(&queue.Node{Val: "test"})
 	// print cache values
-
+	lruCache.Print()
 	// Remove
 
 	// print
